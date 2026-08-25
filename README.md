@@ -8,10 +8,14 @@ A public URL as markdown, paid in one HTTP 402 call. **$0.005 USDC on Base.** Si
 - OpenAPI: https://clear-agent-fetch.fly.dev/openapi.yaml
 - x402scan: https://www.x402scan.com/server/clear-agent-fetch.fly.dev
 
-Public pages only. Not Playwright. Not a captcha product.
+```bash
+curl -sS -D - -X POST https://clear-agent-fetch.fly.dev/v1/fetch \
+  -H "content-type: application/json" \
+  -d '{"url":"https://example.com"}'
+```
 
-Install from this repo once indexed, or:
+Expect **402**. Pay USDC on Base (`amount` `"5000"`, `extra.name` `"USD Coin"`). Retry with `PAYMENT-SIGNATURE`. Public pages only. Not Playwright.
 
 ```
-npx skills add https://clear-agent-fetch.fly.dev/skill.md
+npx skills add https://github.com/curyous/clear-agent-fetch
 ```
