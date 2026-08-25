@@ -12,6 +12,8 @@ description: >
 
 Live host: https://clear-agent-fetch.fly.dev
 
+GitHub skill: https://github.com/curyous/clear-agent-fetch
+
 A page an AI agent can buy in one HTTP call. V1 is one public URL per paid call. $0.005 USDC on Base. Charge only on a successful extract.
 
 v1 extracts the public HTML with Readability + Turndown. JS-only shells fail and are not billed. This is not Playwright / hosted Chrome.
