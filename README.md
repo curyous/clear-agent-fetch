@@ -1,6 +1,8 @@
 # Clear
 
-A public URL as markdown, paid in one HTTP 402 call. **$0.005 USDC on Base.** Sign first, fetch, cash only if markdown comes back. Fail is free.
+Sign $0.005. We fetch. We cash only if you got markdown. Public HTML, not Playwright. Fail is free.
+
+POST `/v1/fetch`. A public URL as markdown, paid in one HTTP 402 call. **$0.005 USDC on Base.** Sign, then fetch. Settle only on markdown. Fail is free.
 
 - Live: https://clear-agent-fetch.fly.dev
 - Skill: [SKILL.md](./SKILL.md)
